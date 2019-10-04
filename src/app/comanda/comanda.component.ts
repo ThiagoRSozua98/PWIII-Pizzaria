@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 })
 export class ComandaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public formBuilder: FormBuilder) {  }
 
   ngOnInit() {
   }
