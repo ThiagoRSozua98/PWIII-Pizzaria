@@ -21,7 +21,7 @@ export class ComandaComponent implements OnInit {
       recheio: this.formBuilder.control(''),
       pessoa: this.formBuilder.control(''),
       servico: this.formBuilder.control(false)
-    })
+    });
   }
   
   onProcessar(){
