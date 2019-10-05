@@ -10,7 +10,7 @@
 
         <h1>COMANDA</h1>
 
-        <form [formGroup]="formPizzaria" (ngSubmit)="OnProcessar()">
+        <form [formGroup]="FormComanda" (ngSubmit)="onProcessar()">
 
           <p>
             <label>Chopp</label>
@@ -30,7 +30,7 @@
           </p>
 
           <p class="keepcomanda">
-            <input type="checkbox" name="inServico" formControlName="taxa"/>
+            <input type="checkbox" name="inServico" formControlName="servico"/>
             <label> Taxa de serviço</label>
           </p>
 

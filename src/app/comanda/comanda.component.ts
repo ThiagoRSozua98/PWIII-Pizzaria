@@ -20,7 +20,7 @@ export class ComandaComponent implements OnInit {
       pizza: this.formBuilder.control(''),
       recheio: this.formBuilder.control(''),
       pessoa: this.formBuilder.control(''),
-      taxa: this.formBuilder.control( true)
+      servico: this.formBuilder.control(false)
     })
   }
   
@@ -29,14 +29,14 @@ export class ComandaComponent implements OnInit {
     let pizza = this.FormComanda.value.pizza;
     let recheio = this.FormComanda.value.recheio;
     let pessoa = this.FormComanda.value.pessoa;
-    let taxa = this.FormComanda.value.taxa;
+    let servico = this.FormComanda.value.taxa;
 
 
     let gasto = (chopp * 7.30) + (pizza * 31.50) + (recheio * 5.90);
     let taxa = gasto * 0.10;
     let total = gasto;
     
-    if (taxa){
+    if (servico){
       total = gasto + taxa;
     }
 
